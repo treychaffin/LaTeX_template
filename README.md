@@ -73,6 +73,9 @@ Packages used in this template:
 
 ### Main Document
 
+The main document is defined in: `/subfiles-collections/main-document.tex/`.
+This document organizes sections of the `.tex` source file into smaller sub-files.
+
 This section begins the document with the document's title page and creating the table of contents:
 
 ```
@@ -114,3 +117,5 @@ All sub-files must include the lines:
     <YOUR CONTENTS HERE>
 \end{document}
 ```
+
+The contents of the subfile are defined between `\begin{document}` and `\end{document}`
