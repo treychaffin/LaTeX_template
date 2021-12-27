@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[margin=0.75in]{geometry} %https://www.ctan.org/pkg/geometry
+\usepackage[utf8]{inputenc} %https://www.ctan.org/pkg/inputenc
+\usepackage[colorlinks=true, pdfborder={0 0 0}, breaklinks=true, urlcolor=cyan, linkcolor=black]{hyperref} % Add links to generated PDF.
+\usepackage{subfiles} %https://www.ctan.org/pkg/subfiles
+\usepackage{graphicx} %https://www.ctan.org/pkg/graphicx
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{scalerel}
+\usepackage{indentfirst}
+\usepackage[table]{xcolor}
+\definecolor{rowaccent}{HTML}{EFEFEF}
+\usepackage{datetime2} %https://www.ctan.org/pkg/datetime2
+\usepackage[backend=biber, bibstyle=numeric, citestyle=verbose, autocite=footnote]{biblatex} %https://www.ctan.org/pkg/biblatex
+\addbibresource{../information/references.bib}
+% https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex
+% https://www.bibme.org/bibtex
+
+\usepackage{fancyhdr}
+\usepackage{currfile}
+
+% header & footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textbf{Right Side Top Header}}
+\lhead{Left Side Top Header}
+\lfoot{\currfilename}
+\cfoot{\today \hspace{0.5mm} $\vert$ \DTMcurrenttime}
+\rfoot{Page \thepage}
+
+% sets the section numbering depth in the table of contents
+\setcounter{secnumdepth}{4}
+
+\begin{document}
+\subfile{../sub-tex/title-page.tex}
+\pagenumbering{roman}
+\setcounter{tocdepth}{4}
+\tableofcontents
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\listoffigures
+\listoftables
+\clearpage
+\pagenumbering{arabic}
+
+\subfile{../sub-tex/subfile.tex} \newpage{}
+
+%\section{References}
+%\printbibliography[heading=none]
+
+
+
+
+\end{document}

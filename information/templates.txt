@@ -1,0 +1,27 @@
+image template:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth, keepaspectratio]{../pics/}
+    \caption{}
+    \label{fig:}
+\end{figure}
+
+
+
+tabularx table:
+
+\begin{table}[H]
+    \centering
+    \rowcolors{2}{rowaccent}{white}
+    \begin{tabularx}{\textwidth}{| p{0.2\textwidth} | X | X |}
+        \hline
+        \rowcolor{black}
+        {\color{white} \textbf{column A}}       &  {\color{white} \textbf{column B}}    & {\color{white} \textbf{column C}}  \\ \hline
+        a1                                      & b1                                    & c1    \\ \hline
+        a2                                      & b2                                    & c2    \\ \hline
+        a3                                      & b3                                    & c3    \\ \hline    
+    \end{tabularx}
+    \label{tab:table-example}
+    \caption{Table Example}   
+\end{table}

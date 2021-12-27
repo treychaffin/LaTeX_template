@@ -1,9 +1,10 @@
 {
-  "latex-workshop.latex.outDir": "../subfiles-pdf",
+  "latex-workshop.latex.outDir": "../sub-pdf",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latex.clean.fileTypes": [
     "*.aux",
     "*.bbl",
+    "*.bcf",
     "*.blg",
     "*.idx",
     "*.ind",
@@ -24,7 +25,8 @@
     "*.synctex(busy)",
     "*.synctex.gz(busy)",
     "*.nav",
-    "*.synctex.gz"
+    "*.synctex.gz",
+    "*.xml",
   ],
   "latex-workshop.latex.clean.subfolder.enabled": true
 }
